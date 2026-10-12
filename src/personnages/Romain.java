@@ -21,6 +21,11 @@ public class Romain {
 		return "Le romain " + nom + " : ";
 	}
 	
+	@Override
+	public String toString() {
+		return nom;
+	}
+
 	public void recevoirCoup(int forceCoup) {
 		force = force - forceCoup;
 		if (force < 1) {
